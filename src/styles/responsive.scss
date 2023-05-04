@@ -1,0 +1,65 @@
+@media only screen and (max-width: 767px) {
+
+    .user {
+        img {
+            margin: 1rem !important;
+        }
+    }
+    .list{
+        .ui.table [class*="right aligned"] {
+            text-align: left;
+        }
+
+        .ui {
+            &.button {
+                &.refresh {
+                    padding: 17px;
+                    background-color: $color-blue;
+                    color: $color-white;
+                }
+            }
+    
+            &.table {
+                border: none !important;
+                border-collapse: separate;
+                border-spacing: 0 10px;
+    
+                thead {
+    
+                    th {
+                        background: none;
+                        border: none;
+                    }
+    
+                    tr {
+                        box-shadow: unset !important;
+    
+                        th {
+                            color: #9e9e9e !important;
+                        }
+                    }
+                }
+                tbody{
+    
+                    tr {
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        border-radius: 0px !important;
+                        cursor: pointer;
+                        border: none !important;
+        
+                        &:hover {
+                            background: $color-white !important;
+                            border: none !important;
+    
+                            td {
+                                border: none !important;
+                                border-radius: 0;
+                            }
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

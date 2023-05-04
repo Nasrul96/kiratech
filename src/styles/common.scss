@@ -1,0 +1,73 @@
+//--------- Common - Start ---------//
+
+.t {
+    &.cap {
+        text-transform: capitalize;
+    }
+}
+
+.d {
+    &.flex {
+        display: flex;
+
+        &.col {
+            flex-direction: column;
+        }
+
+        &.row {
+            flex-direction: row;
+        }
+
+        &.justify-content {
+            &.j-center {
+                justify-content: center;
+            }
+
+            &.j-start {
+                justify-content: flex-start;
+            }
+        }
+
+        &.align-items {
+            &.a-end {
+                align-items: flex-end;
+            }
+        }
+
+        &.wrap {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.ui {
+    font-family: 'Montserrat', sans-serif !important;
+
+    &.modal {
+        .header {
+            font-family: inherit !important;
+            border-top-right-radius: 6px !important;
+            border-top-left-radius: 6px !important;
+        }
+
+        .footer {
+            border-bottom-right-radius: 6px !important;
+            border-bottom-left-radius: 6px !important;
+        }
+
+        .button,
+        .button.icon {
+            padding: 17px;
+            font-weight: 600;
+            border-radius: 6px;
+        }
+    }
+
+    &.button {
+        padding: 17px;
+        font-weight: 600;
+        border-radius: 6px;
+    }
+}
+
+//--------- Common - End ---------//
